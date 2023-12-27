@@ -11,7 +11,7 @@ class FastAPIDeployment:
     @app.get("/hello")
     def say_hello(self, name: str):
         def stream():
-            for char in f"Hello, {name}!":
+            for char in f"Hi, {name}!":
             # for char in ["a"] * 1000:
                 # time.sleep(0.1)
                 yield char
